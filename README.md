@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+### React First Project
+#### MPOP Reverse II
+---
+### Introduction
+> So since I'm trying to use NodeJS for a year, I try to learn React to proceed to `MERN` stack project. And thank you for a day that I saw a face to face coding that uses ReactJS on our school, and they granted me to learn while they doing it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
+### Get Started
+**Step 1**
+> So I do first is to install `npx` on my `npm` so that I can create a new react project. Next is execute this code to your terminal
+```Bash
+npx create-react-app my-app
+```
+> So the `my-app` is the project name we want to use, you may modify it like sample or anything you want.
 
-## Available Scripts
+**Step 2**
+> Next is to check the `App.js`, your `App.js` is the current main file or layout of your react project, so the main setup can be found on  your index.js, which uses `ReactDOM`.
+---
+### Project Test
+**npm start**
+> To test this project, there are lists of commands where you can run to your terminal. The first one is `npm start`, this is to start the project. It is autosync, so that you don't need to close or stop the project and re-run again to see the result. Just save the project by pressing `CTRL+S`
 
-In the project directory, you can run:
+**npm test**
+> By default, when you run npm test , Jest will only run the tests related to files changed since the last commit. This is an optimization designed to make your tests run fast regardless of how many tests you have. However it assumes that you don't often commit the code that doesn't pass the tests. -[Run test](https://create-react-app.dev/docs/running-tests/#:~:text=By%20default%2C%20when%20you%20run,doesn't%20pass%20the%20tests.)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[More about this](React-README.md)
