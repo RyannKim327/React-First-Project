@@ -26,21 +26,32 @@ export default function Base(){
 function Rkim(){
 	const [mydata, setDatas] = useState([])
 	async function fetching(){
-		await axios.get("https://poem.writers.repl.co/lists").then(r => {
-			setDatas(r.data)
+		// await axios.get("https://poem.writers.repl.co/lists").then(r => {
+		// 	setDatas(r.data)
+		// }).catch(e => {
+		// 	setDatas("Error" + e)
+		// })
+		await fetch("https://poem.writers.repl.co/lists").then(r => {
+			return r.json()
+		}).then(r => {
+			setDatas(r.poems)
 		}).catch(e => {
-			setDatas("Error" + e)
+			setDatas("Error: " + e)
 		})
 	}	
 	useEffect(() => {
 		fetching()
 	})
 	return(
-		<div>sds
+		<div>
 			{
-				mydata
+				mydata.map(e => {
+					return(
+						<h1>{e.title}</h1>
+					
+				})
+				// JSON.stringify(mydata)
 			}
-			safsf
 		</div>
 	)
 }
