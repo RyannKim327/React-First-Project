@@ -1,4 +1,4 @@
-export default function header(){
+export default function Header(){
 	const __exclusive__ = {
 		backgroundColor: "#131320",
 		color: "#ffffff",
@@ -18,7 +18,7 @@ export default function header(){
 		<div className="App-Header" style={__exclusive__}>
 			<header>
 				<h3 style={noPadd}>Title Name</h3>
-				<h5 style={lPad}>Developed by MPOP Reverse II</h5>
+				<h5 style={lPad}>Developed under the name of MPOP Reverse II</h5>
 			</header>
 		</div>
 	)
