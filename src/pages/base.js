@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Route, Link, Routes, useLocation } from 'react-router-dom'
+import { Route, Link, Routes } from 'react-router-dom'
 import About from './about'
-
-import axios from "axios"
 
 export default function Base(){
 	return(
