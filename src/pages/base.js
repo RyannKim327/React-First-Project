@@ -48,7 +48,7 @@ function Rkim(){
 				mydata.map(e => {
 					return(
 						<h1>{e.title}</h1>
-					
+					)
 				})
 				// JSON.stringify(mydata)
 			}
