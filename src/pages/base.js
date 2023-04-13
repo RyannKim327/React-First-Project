@@ -43,7 +43,7 @@ function Rkim(){
 	return(
 		<div>
 			{
-				mydata.map(e => {
+				mydata.length <= 0 ? "Please Wait" : mydata.map(e => {
 					return(
 						<h1>{e.title}</h1>
 					)
