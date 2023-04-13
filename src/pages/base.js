@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route, Link, Routes, useLocation } from 'react-router-dom'
 import About from './about'
+
+import axios from "axios"
 
 export default function Base(){
 	return(
@@ -22,10 +24,25 @@ export default function Base(){
 }
 
 function Rkim(){
-	const locale = useLocation()
+	const [mydata, setDatas] = useState([])
+	async function fetching(){
+		await axios.get("https://poem.writers.repl.co/lists").then(r => {
+			setDatas(r.data)
+		}).catch(e => {
+			setDatas("Error" + e)
+		})
+	}	
+	useEffect(() => {
+		fetching()
+	})
 	return(
-		<div>
-			<h1>Hello World {locale.pathname}</h1>
+		<div>sds
+			{
+				mydata
+			}
+			safsf
 		</div>
 	)
 }
+
+// SELECT fc_name FROM something WHERE ID = 1

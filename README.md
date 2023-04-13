@@ -14,7 +14,9 @@ npx create-react-app my-app
 > So the `my-app` is the project name we want to use, you may modify it like sample or anything you want.
 
 **Step 2**
-> Next is to check the `App.js`, your `App.js` is the current main file or layout of your react project, so the main setup can be found on  your index.js, which uses `ReactDOM`.
+> Next is to check the `App.js`, your `App.js` is the current main file or layout of your react project, so the main setup can be found on  your `index.js`, which uses `ReactDOM`.
+
+
 ---
 ### Project Test
 **npm start**
