@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
 import { Route, Link, Routes } from 'react-router-dom'
+
 import About from './about'
+import Read from './read'
 
 export default function Base(){
 	return(
@@ -15,11 +16,13 @@ export default function Base(){
 			</ul>
 			<Routes>
 				<Route path='/about' element={<About />}/>
-				<Route path='/' element={<Rkim />}/>
+				<Route path='/' element={<Read />}/>
 			</Routes>
 		</div>
 	)
 }
+
+/*
 
 function Rkim(){
 	const [mydata, setDatas] = useState([])
@@ -45,7 +48,7 @@ function Rkim(){
 			{
 				mydata.length <= 0 ? "Please Wait" : mydata.map(e => {
 					return(
-						<h1>{e.title}</h1>
+						<h1 className='text-3xl underline'>{e.title}</h1>
 					)
 				})
 				// JSON.stringify(mydata)
@@ -53,5 +56,5 @@ function Rkim(){
 		</div>
 	)
 }
-
+*/
 // SELECT fc_name FROM something WHERE ID = 1
