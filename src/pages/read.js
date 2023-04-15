@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from 'react'
 
+const initial = {
+	title: "",
+	content: ""
+}
+
 export default function Read(){
-	const [data, useData] = useState([])
+	const [{data, useData}, setState] = useState(initial)
 
 	async function FetchReadings(id = 1) {
+		setState([...initial])
 		let _data = await fetch(`https://poem.writers.repl.co/read/${id}`).then(r => {
 			return r.json()
 		}).then(r => {
@@ -13,7 +19,10 @@ export default function Read(){
 				"Error": e.messaage
 			}
 		})
-		useData(_data)
+		useData({
+			title: _data.title,
+			content: _data.content
+		})
 	}
 
 	useEffect(() => {
@@ -23,6 +32,9 @@ export default function Read(){
 	return(
 		<div>
 			<h1>Sample</h1>
+			<ul>
+				<li onClick={FetchReadings(172)}>Sample</li>
+			</ul>
 			<blockquote>{
 				data.content.split("\n").map(c => {
 					return(
